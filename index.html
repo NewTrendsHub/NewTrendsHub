@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TrendsHub | Smart, Trending Essentials</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background-color: #2F855A;
+      color: white;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 500;
+    }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1611078489935-e160d5f7bde3?fit=crop&w=1400&q=80') center center/cover no-repeat;
+      color: white;
+      padding: 100px 40px;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    .hero a {
+      background: #38B2AC;
+      padding: 12px 25px;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .categories, .products {
+      padding: 40px;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 28px;
+      color: #2F855A;
+    }
+
+    .category-grid, .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .category-card, .product-card {
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      text-align: center;
+      padding-bottom: 20px;
+    }
+
+    .category-card img, .product-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .category-card h3, .product-card h3 {
+      margin: 15px 0 5px;
+      font-size: 18px;
+    }
+
+    .product-card p {
+      font-size: 14px;
+      padding: 0 10px;
+    }
+
+    footer {
+      background: #2F855A;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+      margin-top: 40px;
+    }
+
+    footer a {
+      color: #B2F5EA;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>TrendsHub</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#categories">Categories</a>
+      <a href="#products">Products</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Smart, Trending & Eco-Friendly Essentials</h2>
+    <p>Explore handpicked products from the worlds of wellness, pets, eco-living & DIY.</p>
+    <a href="#products">Shop Now</a>
+  </section>
+
+  <section class="categories" id="categories">
+    <h2 class="section-title">Featured Categories</h2>
+    <div class="category-grid">
+      <div class="category-card">
+        <img src="https://images.unsplash.com/photo-1601758064224-7d4bfb4c9f13?fit=crop&w=600&q=80" alt="Pet Supplies">
+        <h3>Pet Essentials</h3>
+      </div>
+      <div class="category-card">
+        <img src="https://images.unsplash.com/photo-1599058917212-d750089bc05b?fit=crop&w=600&q=80" alt="Fitness">
+        <h3>Health & Fitness</h3>
+      </div>
+      <div class="category-card">
+        <img src="https://images.unsplash.com/photo-1592438826211-79fefef1d36c?fit=crop&w=600&q=80" alt="Eco-Friendly">
+        <h3>Eco-Friendly</h3>
+      </div>
+      <div class="category-card">
+        <img src="https://images.unsplash.com/photo-1616627981556-5b4f50b68ed3?fit=crop&w=600&q=80" alt="DIY Tools">
+        <h3>DIY & Tools</h3>
+      </div>
+    </div>
+  </section>
+
+  <section class="products" id="products">
+    <h2 class="section-title">Trending Products</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="https://m.media-amazon.com/images/I/61mAy+9cxPL._AC_SL1500_.jpg" alt="Pet Water Bottle">
+        <h3>HydroPaw™ Bottle</h3>
+        <p>Leakproof travel water bottle for pets. One-button release and retract.</p>
+      </div>
+      <div class="product-card">
+        <img src="https://m.media-amazon.com/images/I/71MB3T-g9GL._AC_SL1500_.jpg" alt="Resistance Bands">
+        <h3>FlexPro™ Bands</h3>
+        <p>Full-body resistance bands set for home and gym workouts.</p>
+      </div>
+      <div class="product-card">
+        <img src="https://m.media-amazon.com/images/I/81C7+x7z0jL._AC_SL1500_.jpg" alt="Beeswax Wraps">
+        <h3>EcoWraps™</h3>
+        <p>Reusable beeswax food wraps. Sustainable & naturally antibacterial.</p>
+      </div>
+      <div class="product-card">
+        <img src="https://m.media-amazon.com/images/I/81r9bTgJ1eL._AC_SL1500_.jpg" alt="Magnetic Wristband">
+        <h3>MagnaGrip™</h3>
+        <p>Magnetic wristband to hold nails, screws, and tools while you work.</p>
+      </div>
+      <div class="product-card">
+        <img src="https://m.media-amazon.com/images/I/61kpN2uCzIL._AC_SL1500_.jpg" alt="Mini Vacuum">
+        <h3>CleanJet™ Mini Vacuum</h3>
+        <p>USB-rechargeable handheld vacuum for desks, cars, and small spaces.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contact">
+    <p>&copy; 2025 TrendsHub. All rights reserved.</p>
+    <p>Contact us at <a href="mailto:trendshub@gmail.com">trendshub@gmail.com</a></p>
+    <p>Follow us on <a href="#">TikTok</a> & <a href="#">Instagram</a></p>
+  </footer>
+</body>
+</html>
